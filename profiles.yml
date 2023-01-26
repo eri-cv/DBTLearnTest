@@ -1,0 +1,12 @@
+send_anonymous_usage_stats: false
+Kedlubna:
+    target: erikatest2
+    outputs:
+        erikatest2:
+            account: '{{ env_var("DBT_KBC_ERIKATEST2_ACCOUNT") }}'
+            database: '{{ env_var("DBT_KBC_ERIKATEST2_DATABASE") }}'
+            password: '{{ env_var("DBT_KBC_ERIKATEST2_PASSWORD") }}'
+            schema: '{{ env_var("DBT_KBC_ERIKATEST2_SCHEMA") }}'
+            type: '{{ env_var("DBT_KBC_ERIKATEST2_TYPE") }}'
+            user: '{{ env_var("DBT_KBC_ERIKATEST2_USER") }}'
+            warehouse: '{{ env_var("DBT_KBC_ERIKATEST2_WAREHOUSE") }}'
